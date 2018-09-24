@@ -3,6 +3,6 @@
 12. Klasse
 
 ## Themen
-* Grammatik
+* kontextfreie Grammatik
 * Produktionsregeln
 * RiTa
