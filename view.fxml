@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Label layoutX="62.0" layoutY="154.0" text="neue Regel" />
+      <TextField fx:id="txtA" layoutX="60.0" layoutY="184.0" prefHeight="25.0" prefWidth="122.0" promptText="&lt;tier&gt;" />
+      <Label layoutX="209.0" layoutY="188.0" text="-&gt;" />
+      <TextField fx:id="txtB" layoutX="233.0" layoutY="184.0" promptText="Hase | Maus" />
+      <Button layoutX="318.0" layoutY="220.0" mnemonicParsing="false" onAction="#regelEinfuegen" text="einfügen" />
+      <TextArea fx:id="txtRegeln" editable="false" layoutX="63.0" layoutY="279.0" prefHeight="238.0" prefWidth="319.0" />
+      <Label layoutX="63.0" layoutY="256.0" text="alle Regeln" />
+      <Button layoutX="321.0" layoutY="538.0" mnemonicParsing="false" onAction="#grammatikLoeschen" text="löschen" />
+      <Label layoutX="459.0" layoutY="102.0" text="Beispiele" />
+      <Button layoutX="699.0" layoutY="538.0" mnemonicParsing="false" onAction="#beispieleLoeschen" text="löschen" />
+      <Button layoutX="689.0" layoutY="98.0" mnemonicParsing="false" onAction="#beispielErzeugen" text="erzeugen" />
+      <TextArea fx:id="txtBeispiele" editable="false" layoutX="459.0" layoutY="139.0" prefHeight="378.0" prefWidth="296.0" wrapText="true" />
+      <Text layoutX="58.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grammatik" wrappingWidth="131.13671875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Label layoutX="62.0" layoutY="123.0" text="Startvariable" />
+      <TextField fx:id="txtStart" layoutX="188.0" layoutY="119.0" prefHeight="25.0" prefWidth="122.0" promptText="&lt;start&gt;" text="&lt;start&gt;" />
+   </children>
+</AnchorPane>
